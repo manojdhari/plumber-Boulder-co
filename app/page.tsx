@@ -25,11 +25,12 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "Boulder Plumber | #1 Plumbing Services in Boulder, CO | Emergency Repairs",
+  title: "Boulder Plumber | #1 Plumbing Services in Boulder, CO",
   description:
-    "Boulder's #1 rated plumbing service! 24/7 emergency plumber, licensed professionals, same-day service. Call (303) 955-3682 for fast, reliable plumbing solutions in Boulder, CO.",
+    "Boulder's #1 rated plumbing service! Same-day service. Call (720) 918-3388 for fast, reliable plumbing solutions in Boulder, CO.",
   keywords:
     "plumber boulder co, emergency plumber boulder, plumbing services boulder colorado, water heater repair boulder, drain cleaning boulder, licensed plumber boulder, same day plumbing boulder",
+  metadataBase: new URL("https://plumbingboulderco.com"),
 }
 
 export default function Home() {
@@ -74,8 +75,8 @@ export default function Home() {
                 <Phone className="h-5 w-5" />
                 <div className="text-right">
                   <p className="text-xs text-gray-600">Call Now</p>
-                  <Link href="tel:3039553682" className="text-lg font-bold hover:text-blue-700">
-                    (303) 955-3682
+                  <Link href="tel:+17209183388" className="text-lg font-bold hover:text-blue-700">
+                    (720) 918-3388
                   </Link>
                 </div>
               </div>
@@ -128,15 +129,15 @@ export default function Home() {
                     className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold px-8 py-4 rounded-xl shadow-xl text-lg"
                     asChild
                   >
-                    <Link href="tel:3039553682">
+                    <Link href="tel:+17209183388">
                       <Phone className="mr-3 h-5 w-5" />
-                      Call (303) 955-3682
+                      Call (720) 918-3388
                     </Link>
                   </Button>
                   <Button
                     size="lg"
                     variant="outline"
-                    className="border-2 border-gray-300 hover:border-blue-600 hover:bg-blue-50 font-bold px-8 py-4 rounded-xl text-lg"
+                    className="border-2 border-gray-300 hover:border-blue-600 hover:bg-blue-50 font-bold px-8 py-4 rounded-xl text-lg bg-transparent"
                     asChild
                   >
                     <Link href="#services">
@@ -232,7 +233,7 @@ export default function Home() {
                 className="bg-white text-red-600 hover:bg-gray-100 font-bold px-8 py-3 rounded-xl"
                 asChild
               >
-                <Link href="tel:3039553682">
+                <Link href="tel:+17209183388">
                   <Phone className="mr-2 h-5 w-5" />
                   Emergency Call
                 </Link>
@@ -672,8 +673,8 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="text-gray-400 text-sm">Call or Text</p>
-                      <Link href="tel:3039553682" className="text-2xl font-bold hover:text-blue-400">
-                        (303) 955-3682
+                      <Link href="tel:+17209183388" className="text-2xl font-bold hover:text-blue-400">
+                        (720) 918-3388
                       </Link>
                     </div>
                   </div>
@@ -684,7 +685,7 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="text-gray-400 text-sm">Service Address</p>
-                      <p className="text-xl font-bold">1234 Pearl Street, Boulder, CO 80302</p>
+                      <p className="text-xl font-bold">2537 Pearl St, Boulder, CO 80302, USA</p>
                     </div>
                   </div>
 
@@ -694,11 +695,8 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="text-gray-400 text-sm">Email Us</p>
-                      <Link
-                        href="mailto:info@boulderproplumbing.com"
-                        className="text-xl font-bold hover:text-green-400"
-                      >
-                        info@boulderproplumbing.com
+                      <Link href="mailto:info@plumbingboulderco.com" className="text-xl font-bold hover:text-green-400">
+                        info@plumbingboulderco.com
                       </Link>
                     </div>
                   </div>
@@ -737,7 +735,7 @@ export default function Home() {
                       <input
                         id="phone"
                         className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:border-transparent"
-                        placeholder="(303) 555-0123"
+                        placeholder="(720) 918-3388"
                       />
                     </div>
                   </div>
@@ -807,9 +805,9 @@ export default function Home() {
               className="bg-white text-blue-600 hover:bg-gray-100 font-bold px-12 py-6 rounded-2xl text-2xl shadow-xl"
               asChild
             >
-              <Link href="tel:3039553682">
+              <Link href="tel:+17209183388">
                 <Phone className="mr-3 h-6 w-6" />
-                (303) 955-3682
+                (720) 918-3388
               </Link>
             </Button>
           </div>
@@ -836,8 +834,8 @@ export default function Home() {
               </p>
               <div className="flex items-center space-x-2">
                 <Phone className="h-5 w-5 text-blue-400" />
-                <Link href="tel:3039553682" className="text-white font-bold hover:text-blue-400">
-                  (303) 955-3682
+                <Link href="tel:+17209183388" className="text-white font-bold hover:text-blue-400">
+                  (720) 918-3388
                 </Link>
               </div>
             </div>
@@ -889,6 +887,10 @@ export default function Home() {
                 <li>Niwot</li>
                 <li>Gunbarrel</li>
                 <li>Erie</li>
+                <li>Broomfield</li>
+                <li>Westminster</li>
+                <li>Thornton</li>
+                <li>Arvada</li>
               </ul>
             </div>
 
@@ -905,15 +907,15 @@ export default function Home() {
                 <li>
                   <strong className="text-white">Address:</strong>
                   <br />
-                  1234 Pearl Street
+                  2537 Pearl St
                   <br />
-                  Boulder, CO 80302
+                  Boulder, CO 80302, USA
                 </li>
                 <li>
                   <strong className="text-white">Email:</strong>
                   <br />
-                  <Link href="mailto:info@boulderproplumbing.com" className="hover:text-white">
-                    info@boulderproplumbing.com
+                  <Link href="mailto:info@plumbingboulderco.com" className="hover:text-white">
+                    info@plumbingboulderco.com
                   </Link>
                 </li>
               </ul>
